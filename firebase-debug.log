@@ -1,0 +1,36 @@
+[debug] [2017-10-30T20:59:20.590Z] ----------------------------------------------------------------------
+[debug] [2017-10-30T20:59:20.592Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Soporte\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2017-10-30T20:59:20.593Z] CLI Version:   3.13.1
+[debug] [2017-10-30T20:59:20.593Z] Platform:      win32
+[debug] [2017-10-30T20:59:20.593Z] Node Version:  v8.8.1
+[debug] [2017-10-30T20:59:20.593Z] Time:          Mon Oct 30 2017 14:59:20 GMT-0600 (Hora estándar central (México))
+[debug] [2017-10-30T20:59:20.593Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-10-30T20:59:20.603Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-10-30T20:59:20.604Z] > authorizing via signed-in user
+[debug] [2017-10-30T20:59:20.605Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-10-30T20:59:20.605Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/bTITQE-kHOBiNbLCH9pzuGVCb2XmdoRSJNLACfwpGD4',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Mon Oct 30 2017 14:59:20 GMT-0600 (Hora estándar central (México))
+[debug] [2017-10-30T20:59:20.900Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-30T20:59:20.942Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/mesai-95ccd  
+ Mon Oct 30 2017 14:59:20 GMT-0600 (Hora estándar central (México))
+[debug] [2017-10-30T20:59:21.388Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-30T20:59:21.391Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/mesai-95ccd/tokens  
+ Mon Oct 30 2017 14:59:21 GMT-0600 (Hora estándar central (México))
+[debug] [2017-10-30T20:59:21.904Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\Soporte\Desktop\RED MPIO\proyectos\mesai'...
+[info] 
+[debug] [2017-10-30T20:59:21.915Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/mesai-95ccd  
+ Mon Oct 30 2017 14:59:21 GMT-0600 (Hora estándar central (México))
+[debug] [2017-10-30T20:59:22.499Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-30T20:59:22.500Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/749841770538/clients/_:getWebAppConfig  
+ Mon Oct 30 2017 14:59:22 GMT-0600 (Hora estándar central (México))
+[debug] [2017-10-30T20:59:22.964Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+

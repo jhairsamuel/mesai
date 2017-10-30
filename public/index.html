@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+<script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAzn073zfpgNAjtBpMpIOdN2-CN0lJocxk",
+    authDomain: "mesai-95ccd.firebaseapp.com",
+    databaseURL: "https://mesai-95ccd.firebaseio.com",
+    projectId: "mesai-95ccd",
+    storageBucket: "mesai-95ccd.appspot.com",
+    messagingSenderId: "749841770538"
+  };
+  firebase.initializeApp(config);
+</script>
+</head>
+<body>
+<form>
+	<input type="text" id="nombre" placeholder="ingresar nombre" 	>
+	<input type="text" id="sucursal" placeholder="ingresar sucursal" 	>
+	<input type="text" id="puesto" placeholder="ingresar puesto" 	>
+	<input type="button" value="enviar" onclick="enviarForm();">
+</form>
+
+
+</body>
+<script type="text/javascript">
+  function enviarForm(){
+    var nombre = $("#nombre").val();
+    var sucursal = $("#sucursal").val();
+    var puesto = $("#puesto").val();
+
+    var ing = firebase.database().ref("users");
+
+    ing.push({
+      nombre:nombre,
+      sucursal:sucursal,
+      puesto:puesto
+    }).then(function(){
+      alert("guardado");
+    });
+
+  }
+</script>
+</html>
